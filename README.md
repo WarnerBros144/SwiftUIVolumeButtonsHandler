@@ -5,11 +5,13 @@ SwiftUIVolumeButtonsHandler is simple way to handling clicks on hardware volume 
 ## Usage
 
 ### Step 1: Declare the handler
+
 ```
 let volumeButtonHandler = VolumeButtonHandler(containerView: UIView())
 ```
 
 ### Step 2: Automatically start the handler by adding the overlay
+
 ```
 .overlay(
     VolumeButtonHandlerView(volumeButtonHandler: volumeButtonHandler)
@@ -17,6 +19,7 @@ let volumeButtonHandler = VolumeButtonHandler(containerView: UIView())
 ```
 
 ### Step 3: Listen for button presses
+
 ```
 .onAppear {
     volumeButtonHandler.buttonClosure = { button in
@@ -31,10 +34,6 @@ let volumeButtonHandler = VolumeButtonHandler(containerView: UIView())
     }
 }
 ```
-
-## Requirements
-
-iOS 11 and newer.
 
 ## Installation
 
